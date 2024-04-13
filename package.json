@@ -1,0 +1,11 @@
+{
+  "name": "mern_stack_project",
+  "version": "1.0.0",
+  "description": "This is own personal project",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node --watch src/server.js"
+  },
+  "author": "sahooj168@gmail.com",
+  "license": "ISC"
+}
