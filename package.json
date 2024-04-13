@@ -4,12 +4,15 @@
   "description": "This is own personal project",
   "main": "server.js",
   "scripts": {
-    "dev": "node --watch src/server.js"
+    "dev": "node --watch src/server.js",
+    "format:check": "prettier . --check",
+    "format:fix": "prettier . --write"
   },
   "author": "sahooj168@gmail.com",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.12.7",
+    "prettier": "3.2.5",
     "typescript": "^5.4.5"
   }
 }
