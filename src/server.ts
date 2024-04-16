@@ -1,9 +1,18 @@
-function login(username: string): string {
-    const user = {
-        name: "jjjjj",
-    };
-    const name = user.name;
-    return username + name;
-}
+import app from "./app";
+import { config } from "./config";
 
-login("jitu");
+const startServer = () => {
+    const PORT = config.get("port");
+    try {
+        app.listen(PORT, () => {
+            // eslint-disable-next-line no-console
+            console.log(`http://localhost:${PORT}`);
+        });
+    } catch (err) {
+        // eslint-disable-next-line no-console
+        console.error(err);
+        process.exit(1);
+    }
+};
+
+startServer();
