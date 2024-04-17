@@ -15,5 +15,7 @@ module.exports = {
   rules: {
     "no-console": "error",
     "dot-notation": "error",
+    "@typescript-eslint/no-misused-promise":"off",
+    "@typescript-eslint/require-await":"off",
   },
 };
