@@ -1,3 +1,5 @@
+import "dotenv/config";
+
 interface Config {
     apikey: string;
     secret: string;
